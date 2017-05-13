@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ann's kitchen</title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/logoBig.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+  <div  id="header">
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Contacts</a>
+    <a href="#">Events</a>
+    <a href="#">Menu</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger" style="color:white;"></span></span>
+      <div class="center">
+
+        <img src="assets/logoBig.png">
+        <h1>We provide the Best Food</h1>
+        <h2>At The <span class="header-font">Right Price</span></h2>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div id="special" class="col-sm-3">
+        <div id="happy">
+          <h3 class="happyhour-font" data-toggle="modal" data-target="#happy-modal">Happy hour</h3>
+        </div>
+        <div class="party">
+          <h3 class="partytime-font" data-toggle="modal" data-target="#party-modal">Party Time</h3>
+        </div>
+      </div>
+      <div id="breakfast" class="col-sm-3">
+        <h3 class="breakfast-font">Breakfast</h3>
+      </div>
+      <div id="lunch" class="col-sm-3">
+        <h3 class=lunch-font>Lunch</h3>
+      </div>
+      <div id="dinner" class="col-sm-3">
+        <h3 class="dinner-font">Dinner</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="fastfood">
+    <div class="col-sm-6">
+      <div class="fastfood">
+        <img src="assets/fastFood1.jpg">
+        <img src="assets/fastFood2.jpg">
+      </div>
+    </div>
+    <div class="col-sm-6" id="fastfooddesc">
+      <h1 class="ffoodfont">Fast Food</h1>
+      <h4 class="ffoodfont">You'll love our delicious fast food</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.cepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit.</p>
+      <button class="button button1">VIEW GALLERY  <span class="glyphicon glyphicon-arrow-right"></span></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="drinks">
+      <div class="col-sm-6" id="drinksdesc">
+        <h1 class="ffoodfont">Drinks</h1>
+        <h4 class="ffoodfont">We also produce delicious drinks</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor.
+        </p>
+        <button class="button button1">VIEW GALLERY  <span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+      <div class="col-sm-6">
+        <div class="drink-container">
+          <div class="fastfood">
+            <img src="assets/drink1.jpg">
+            <img src="assets/drink2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--menu-slide-->
+  <div class="menu-slide-container">
+  <div class="menu-slide">
+    <div class="slide-div">
+      <div id="content">
+          <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+          <li class="active"><a href="#food-slide" data-toggle="tab">Fast Food</a></li>
+          <li><a href="#drinks-slide" data-toggle="tab">Drinks</a></li>
+          <li><a href="#chicken-slide" data-toggle="tab">Chicken</a></li>
+          <li><a href="#rice-slide" data-toggle="tab">Rice</a></li>
+          </ul>
+          <div id="my-tab-content" class="tab-content">
+              <div class="tab-pane active" id="food-slide">
+                <div class="img-active">
+                  <!-- <span class="glyphicon glyphicon-menu-left" id="food-glyph"> -->
+                    <img src="assets/fastfood/chickenBurger.jpg" width="170" height="100">
+                    <p>Chicken Burger</p>
+                  </div>
+                  <div class="img-active">
+                    <img src="assets/fastfood/beefBurger.jpg" width="170" height="100">
+                    <p>Beef Burger</p>
+                  </div>
+                <div class="img-active">
+                    <img src="assets/fastfood/chickenPizza.jpg" width="170" height="100">
+                    <p>Chicken Pizza</>
+                  </div>
+              </div>
+              <div class="tab-pane" id="drinks-slide">
+              ...
+              </div>
+              <div class="tab-pane" id="chicken-slide">
+              ...
+              </div>
+              <div class="tab-pane" id="rice-slide">
+              ...
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--customer-->
+  <div class="container">
+    <div class="customers">
+      <div class="row">
+        <div class="col-sm-7">
+          <h3 class="toma">Our Happy Customers</h3>
+          <p class="toma">George Richard</p>
+          <p class="customer-testimony">Great food! Menu is awesome, there foods are not only great but also in the right price. I'll highly recommend them :)</p>
+          <span class="glyphicon glyphicon-menu-left" >
+          <img src="assets/customers/p1.png" class="customer-image">
+          <img src="assets/customers/p2.png" class="customer-image">
+          <img src="assets/customers/p3.png" class="customer-image">
+          <span class="glyphicon glyphicon-menu-right">
+        </div>
+        <div class="col-sm-5">
+          <div class="verticalLine">
+            <h3 class="toma">About Menu</h3>
+            <p class="about-menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--customers-->
+  <!--subsribe-->
+  <div class="contact">
+    <h4 class="delivery">Get our daily food items delivered to your email.</h4>
+    <form id="subsribe-users">
+      <input type="email" placeholder="Your email"  id="user-email"size="30">
+      <button type="submit" class="button-subscribe">Subscribe</button>
+    </form>
+
+  </div>
+  <!--footer-->
+  <!--footer-->
+		<div class="footer">
+			<div>
+				<img src="assets/footerlogos/logo_white.png" class="burger-logo-img">
+				<h1 class="burger-logo">MENU</h1>
+			</div>
+			<h3>Thats What We Are</h3>
+			<a href="#"><img src="assets/footerlogos/facebook.png" class="footer-logo"></a>
+			<a href="#"><img src="assets/footerlogos/twitter.png"  class="footer-logo"></a>
+			<a href="#"><img src="assets/footerlogos/pinterest.png"  class="footer-logo"></a>
+			<p>2016 Menu Restaurant</p>
+		</div>
+</body>
+</html>
