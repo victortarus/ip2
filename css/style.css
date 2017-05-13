@@ -1,6 +1,6 @@
 #header{
   background-image:url('../assets/backgrounds/landing.jpg');
-
+  width: 100%;
 }
 .center{
   color: white;
@@ -13,12 +13,14 @@
 #happy{
   background-color: #e4e5e7;
   padding: 5px;
-  margin: 0;
+  text-align: center;
+  padding-right:0 ;
 }
 .party{
   background-color:#f15a29;
   padding: 5px;
   color:white;
+  text-align: center;
 }
 #breakfast{
   color:white;
@@ -115,17 +117,20 @@ box-shadow: 0 0 5px 5px #888;
     right: 45px;
     font-size: 60px;
 }
+.rfont{font-family: 'Roboto Slab', serif;}
 span.glyphicon-menu-hamburger{
     font-size: 50px;
 }
 .menu-slide {
    height: 500px;
    background-image: url("../assets/backgrounds/foodsBg.jpg");
-    color: #f15a29;
+  color: #f15a29;
    text-align: center;
    padding: 36px;
    padding-top: 80px;
    padding-bottom: 80px;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 .slide-div {
    background-color: white;
@@ -178,8 +183,9 @@ height: 250px;
 .button-subscribe{
 color: white;
 background-color: #f15a29;
-font-style: oblique;
-font-size: 30px;
+
+
+font-size: 22px;
 }
 .footer{
   background:#f15a29;
@@ -191,6 +197,11 @@ font-size: 30px;
   position: relative;
 }
 .img-active{
-  
+  float: left;
+  margin-left: 25px;
 
+}
+a{
+  color:#f15a29;
+  font-size: 20px;
 }

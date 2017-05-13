@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>ann's kitchen</title>
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,24 +18,24 @@
 
 <body>
   <div class="container-fluid">
-  <div  id="header">
-    <!-- The overlay -->
-<div id="myNav" class="overlay">
+    <div id="header">
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="#">Contacts</a>
-    <a href="#">Events</a>
-    <a href="#">Menu</a>
-  </div>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Contacts</a>
+          <a href="#">Events</a>
+          <a href="#">Menu</a>
+        </div>
 
-</div>
+      </div>
 
-<!-- Use any element to open/show the overlay navigation menu -->
-<span onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger" style="color:white;"></span></span>
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger" style="color:white;"></span></span>
       <div class="center">
 
         <img src="assets/logoBig.png">
@@ -46,7 +46,7 @@
     </div>
 
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div id="special" class="col-sm-3">
         <div id="happy">
@@ -75,8 +75,8 @@
       </div>
     </div>
     <div class="col-sm-6" id="fastfooddesc">
-      <h1 class="ffoodfont">Fast Food</h1>
-      <h4 class="ffoodfont">You'll love our delicious fast food</h4>
+      <h1 class="rfont">Fast Food</h1>
+      <h4 class="rfont">You'll love our delicious fast food</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.cepteur sint occaecat cupidatat non proident,
         sunt in culpa qui officia deserunt mollit.</p>
@@ -86,8 +86,8 @@
   <div class="container">
     <div class="row" id="drinks">
       <div class="col-sm-6" id="drinksdesc">
-        <h1 class="ffoodfont">Drinks</h1>
-        <h4 class="ffoodfont">We also produce delicious drinks</h4>
+        <h1 class="rfont">Drinks</h1>
+        <h4 class="rfont">We also produce delicious drinks</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor.
         </p>
@@ -105,45 +105,46 @@
   </div>
   <!--menu-slide-->
   <div class="menu-slide-container">
-  <div class="menu-slide">
-    <div class="slide-div">
-      <div id="content">
+    <div class="menu-slide">
+      <div class="slide-div">
+        <div id="content">
           <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-          <li class="active"><a href="#food-slide" data-toggle="tab">Fast Food</a></li>
-          <li><a href="#drinks-slide" data-toggle="tab">Drinks</a></li>
-          <li><a href="#chicken-slide" data-toggle="tab">Chicken</a></li>
-          <li><a href="#rice-slide" data-toggle="tab">Rice</a></li>
+            <li class="active"><a href="#food-slide" data-toggle="tab">Fast Food</a></li>
+            <li><a href="#drinks-slide" data-toggle="tab">Drinks</a></li>
+            <li><a href="#chicken-slide" data-toggle="tab">Chicken</a></li>
+            <li><a href="#rice-slide" data-toggle="tab">Rice</a></li>
           </ul>
           <div id="my-tab-content" class="tab-content">
-              <div class="tab-pane active" id="food-slide">
-                <div class="img-active">
-                  <!-- <span class="glyphicon glyphicon-menu-left" id="food-glyph"> -->
-                    <img src="assets/fastfood/chickenBurger.jpg" width="170" height="100">
-                    <p>Chicken Burger</p>
-                  </div>
-                  <div class="img-active">
-                    <img src="assets/fastfood/beefBurger.jpg" width="170" height="100">
-                    <p>Beef Burger</p>
-                  </div>
-                <div class="img-active">
-                    <img src="assets/fastfood/chickenPizza.jpg" width="170" height="100">
-                    <p>Chicken Pizza</>
-                  </div>
+            <div class="tab-pane active" id="food-slide">
+              <div class="img-active">
+                <!-- <span class="glyphicon glyphicon-menu-left" id="food-glyph"> -->
+                <img src="assets/fastfood/chickenBurger.jpg">
+                <p>Chicken Burger</p>
               </div>
-              <div class="tab-pane" id="drinks-slide">
+              <div class="img-active">
+                <img src="assets/fastfood/beefBurger.jpg">
+                <p>Beef Burger</p>
+              </div>
+              <div class="img-active">
+                <img src="assets/fastfood/chickenPizza.jpg">
+                <p>Chicken Pizza
+                  </>
+              </div>
+            </div>
+            <div class="tab-pane" id="drinks-slide">
               ...
-              </div>
-              <div class="tab-pane" id="chicken-slide">
+            </div>
+            <div class="tab-pane" id="chicken-slide">
               ...
-              </div>
-              <div class="tab-pane" id="rice-slide">
+            </div>
+            <div class="tab-pane" id="rice-slide">
               ...
-              </div>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <!--customer-->
   <div class="container">
     <div class="customers">
@@ -152,7 +153,7 @@
           <h3 class="toma">Our Happy Customers</h3>
           <p class="toma">George Richard</p>
           <p class="customer-testimony">Great food! Menu is awesome, there foods are not only great but also in the right price. I'll highly recommend them :)</p>
-          <span class="glyphicon glyphicon-menu-left" >
+          <span class="glyphicon glyphicon-menu-left">
           <img src="assets/customers/p1.png" class="customer-image">
           <img src="assets/customers/p2.png" class="customer-image">
           <img src="assets/customers/p3.png" class="customer-image">
@@ -174,8 +175,8 @@
   <!--subsribe-->
   <div class="contact">
     <h4 class="delivery">Get our daily food items delivered to your email.</h4>
-    <form id="subsribe-users">
-      <input type="email" placeholder="Your email"  id="user-email"size="30">
+    <form id="subscribe-users">
+      <input type="email" placeholder="Your email"  id="user-email"size="39">
       <button type="submit" class="button-subscribe">Subscribe</button>
     </form>
 
